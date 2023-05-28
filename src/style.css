@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.posttrue {
+  text-decoration: line-through;
+  text-decoration-color: palevioletred;
+}
+.titles {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  width: 250px;
+  word-wrap: break-word;
+  font-size: 20px;
+  color: cornflowerblue;
+  opacity: 70%;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  border-color: pink;
+  background-color: pink;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: pink;
+  user-select: none;
+  opacity: 40%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 400px;
+}
+.post {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding: 15px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  justify-content: space-between;
+  align-items: center;
+}
+.selected {
+  border-bottom: 2px solid cornflowerblue;
+  border-top: 2px solid transparent;
+}
+.Bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.input {
+  height: 40px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid pink;
+  padding: 0 20px;
+  font-size: 15px;
+  background-color: #f7f7f7;
+  margin-right: 62px;
+}
+.input::placeholder {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  opacity: 50%;
+}
+.input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  margin-left: 4px;
+  color: grey;
+  opacity: 70%;
+}
+span {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  color: grey;
+  opacity: 70%;
+}

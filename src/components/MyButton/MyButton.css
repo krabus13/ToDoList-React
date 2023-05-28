@@ -1,0 +1,23 @@
+.button {
+  padding: 5px 15px;
+  color: pink;
+  opacity: 95%;
+  font-size: 15px;
+  background: transparent;
+  border-bottom: 2px solid pink;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+}
+.button:active {
+  color: cornflowerblue;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: cornflowerblue;
+}
+.btn {
+  font-size: 40px;
+}
