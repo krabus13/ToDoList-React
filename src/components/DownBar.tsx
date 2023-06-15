@@ -21,16 +21,10 @@ const DownBar: React.FC<DownBarProps> = ({
   return (
     <div>
       <div className="Bar">
-        <span
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {completed} items left
-        </span>
-        <Filter setFilter={setFilter} filter={filter} />
+        <div className="DownBarComponent">
+          <span className="spanComponent">{completed} items left</span>
+          <Filter setFilter={setFilter} filter={filter} />
+        </div>
         <MyButton onClick={removeSelected}>Clear completed</MyButton>
       </div>
     </div>

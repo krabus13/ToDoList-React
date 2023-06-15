@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", sans-serif;
 }
 .posttrue {
   text-decoration: line-through;
   text-decoration-color: palevioletred;
 }
 .titles {
-  font-family: "Franklin Gothic Medium", sans-serif;
   width: 250px;
   word-wrap: break-word;
   font-size: 20px;
@@ -34,7 +34,6 @@ input[type="checkbox"]:checked {
 }
 
 h1 {
-  font-family: "Franklin Gothic Medium", sans-serif;
   font-size: 100px;
   display: flex;
   justify-content: center;
@@ -51,6 +50,30 @@ h1 {
 
 .App {
   width: 400px;
+}
+@media (max-width: 450px) {
+  .App {
+    width: auto;
+    height: auto;
+  }
+  .input {
+    margin: 0;
+    width: 200px;
+  }
+  .titles {
+    padding-left: 15px;
+  }
+  .Bar {
+    flex-direction: column;
+  }
+  .DownBarComponent {
+    padding-bottom: 10px;
+  }
+}
+.DownBarComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .post {
   display: flex;
@@ -70,6 +93,7 @@ h1 {
   justify-content: space-between;
   margin-top: 10px;
 }
+
 .input {
   height: 40px;
   border-top: 2px solid transparent;
@@ -82,22 +106,22 @@ h1 {
   margin-right: 62px;
 }
 .input::placeholder {
-  font-family: "Franklin Gothic Medium", sans-serif;
   opacity: 50%;
 }
 .input:focus {
   outline: none;
 }
+.spanComponent {
+  padding-right: 20px;
+}
 
 a {
   text-decoration: none;
-  font-family: "Franklin Gothic Medium", sans-serif;
   margin-left: 4px;
   color: grey;
   opacity: 70%;
 }
 span {
-  font-family: "Franklin Gothic Medium", sans-serif;
   color: grey;
   opacity: 70%;
 }
